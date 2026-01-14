@@ -1,0 +1,40 @@
+// {
+//   "compilerOptions": {
+//     "target": "es2016",          // Bien, compatible con Node moderno
+//     "module": "commonjs",        // Bien para Node
+//     "outDir": "./dist",          // <--- NUEVO: directorio de salida para JS compilado
+//     "rootDir": "./",             // Opcional, ayuda a mantener estructura
+//     "strict": true,
+//     "esModuleInterop": true,
+//     "forceConsistentCasingInFileNames": true,
+//     "skipLibCheck": true
+//   },
+//   "include": [
+//     "server.ts",
+//     "db/**/*.ts",
+//     "routes/**/*.ts",
+//     "models/**/*.ts"
+//   ]
+// }
+
+
+
+{
+  "compilerOptions": {
+    "target": "es2016",
+    "module": "commonjs",
+    "outDir": "./dist",
+    "rootDir": "./",
+    "strict": true,
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "server.ts",
+    "db/**/*.ts",
+    "routes/**/*.ts",
+    "api/**/*.ts"
+  ],
+  "exclude": ["node_modules", "dist"]
+}
